@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Títere</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff914d;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #ffb26b;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0.8rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        article {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        article h2 {
+            color: #ff6f00;
+            margin-top: 0;
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mundo títere</h1>
+        <p>La casa de los titeres y sus amantes!</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#historia">História</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <article id="inicio">
+            <h2>Bem-vindo ao Blog dos Títeres!</h2>
+            <img src="https://cdn.pixabay.com/photo/2017/01/31/18/40/puppet-2025984_1280.jpg" alt="Títeres coloridos">
+            <p>Os títeres, também conhecidos como fantoches, encantam gerações com suas histórias cheias de imaginação e humor. Aqui você encontrará curiosidades, técnicas e entrevistas com artistas que dão vida a esses personagens mágicos.</p>
+        </article>
+
+        <article id="historia">
+            <h2>A História dos Títeres</h2>
+            <img src="https://cdn.pixabay.com/photo/2018/09/13/16/11/puppet-show-3676355_1280.jpg" alt="Show de fantoches">
+            <p>O teatro de títeres tem origem antiga, remontando a rituais e festas populares em várias culturas. No Egito, na Grécia e na China, já se utilizavam figuras articuladas para contar histórias e ensinar valores.</p>
+        </article>
+
+        <article id="dicas">
+            <h2>Dicas para Criar Seus Próprios Títeres</h2>
+            <img src="https://cdn.pixabay.com/photo/2020/09/01/19/03/puppet-5535439_1280.jpg" alt="Fantoches feitos à mão">
+            <ul>
+                <li>Use materiais recicláveis como meias, papel e feltro.</li>
+                <li>Crie personagens com personalidades distintas.</li>
+                <li>Treine a voz e os gestos para dar mais vida ao seu títere.</li>
+                <li>Monte pequenas peças com mensagens educativas.</li>
+            </ul>
+        </article>
+
+        <article id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Quer compartilhar suas criações ou sugerir um tema? Envie um e-mail para <a href="mailto:blogdostiteres@gmail.com">blogdostiteres@gmail.com</a>!</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 Blog dos Títeres — Feito com 💛 e criatividade.</p>
+    </footer>
+
+</body>
+</html>
