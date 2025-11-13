@@ -1,1 +1,181 @@
+/* --- 1. Configurações Globais --- */
+:root {
+    --primary-color: #8A2BE2; /* Azul-Violeta (Base) */
+    --secondary-color: #A052F6; /* Roxo Claro */
+    --accent-color: #4CAF50; /* Verde de Ação */
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-light: #f4f7f9;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* --- 2. Navegação (Nav) --- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--text-light);
+    height: 65px;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a, #nav-auth-btn {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.nav-links a:hover, #nav-auth-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+#nav-auth-btn {
+    background: none;
+    border: 2px solid var(--text-light);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* --- 3. Header e Layout Principal --- */
+#app-header {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(135deg, var(--primary-color) 0%, #5d0c8b 100%);
+    color: var(--text-light);
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+#app-content {
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* --- 4. Componentes (Cards/Forms) --- */
+.card {
+    background-color: var(--text-light);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--primary-color);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* --- 5. Botões e Formulários --- */
+input[type="text"], textarea, select, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #3e8e41;
+}
+
+/* --- 6. Grid e Itens de Contribuição --- */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contribuicao-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--text-light);
+    transition: transform 0.3s;
+}
+
+.contribuicao-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contribuicao-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.contribuicao-content {
+    padding: 18px;
+}
+
+.contribuicao-content h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.contribuicao-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed #eee;
+}
+
+/* --- 7. Utilitários e Responsividade --- */
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        /* Lógica para menu responsivo mantida */
+    }
+}
